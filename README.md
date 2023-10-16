@@ -6,7 +6,7 @@ This repository contains the code and documentation for my Bachelor's thesis pro
 
 - You can also check this out on the p5.js web editor :
 
-  [p5.js web editor implementation](https://editor.p5js.org/adityameena1one/full/VlmYFhk5J "Open Web Editor")
+  [p5.js web editor implementation](https://editor.p5js.org/adityameena1one/sketches/VlmYFhk5J "Open Web Editor")
 
 ## Table of Contents
 
