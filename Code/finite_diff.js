@@ -1,8 +1,12 @@
 function boundry_condition(i, j) {
-  if (grid[i][j - 1].type == "I") grid[i][j + 1].value = grid[i][j - 1].value;
-  if (grid[i][j + 1].type == "I") grid[i][j - 1].value = grid[i][j + 1].value;
-  if (grid[i - 1][j].type == "I") grid[i + 1][j].value = grid[i - 1][j].value;
-  if (grid[i + 1][j].type == "I") grid[i - 1][j].value = grid[i + 1][j].value;
+  if (grid[i][j - 1].type == "I") grid[i][j + 1].value = -1*grid[i][j - 1].value;
+  if (grid[i][j + 1].type == "I") grid[i][j - 1].value = -1*grid[i][j + 1].value;
+  if (grid[i - 1][j].type == "I") grid[i + 1][j].value = -1*grid[i - 1][j].value;
+  if (grid[i + 1][j].type == "I") grid[i - 1][j].value = -1*grid[i + 1][j].value;
+  if (grid[i][j + 1].type == "O") grid[i][j + 1].value = -1*grid[i][j - 1].value;
+  if (grid[i][j - 1].type == "O") grid[i][j - 1].value = -1*grid[i][j + 1].value;
+  if (grid[i + 1][j].type == "O") grid[i + 1][j].value = -1*grid[i - 1][j].value;
+  if (grid[i - 1][j].type == "O") grid[i - 1][j].value = -1*grid[i + 1][j].value;
 }
 
 function second_order_diff(i, j) {
